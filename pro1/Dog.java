@@ -4,7 +4,7 @@ public class Dog extends Animal {
 	public String breed; 
 	public Dog() {
 		super();
-		this.breed = "unknow";
+		this.breed = "unknown";
 		
 	}
 	
@@ -16,5 +16,6 @@ public class Dog extends Animal {
     public String toString() {
         return "Dog{name='" + name + "', age=" + age + "}";
     }
+	
 
 }
