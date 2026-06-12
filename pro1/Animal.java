@@ -13,7 +13,7 @@ public class Animal {
 		this.weight = 20;
 	}
 	
-	public Animal(String nameInput, int ageInput, float heightInput, double weightInput, String breedInput){ //constructor - 1 o đc tạo thì hàm này đc gọi, mục đích: gán giá trị cho biến
+	public Animal(String nameInput, int ageInput, float heightInput, double weightInput){ //constructor - 1 o đc tạo thì hàm này đc gọi, mục đích: gán giá trị cho biến
 // () laf parametor cua ham
 		this.name = nameInput;
 		this.age = ageInput;
@@ -28,4 +28,16 @@ public class Animal {
 	public void setAge(int newAge){ //setAge la 1 ham setter
 		this.age = newAge;
 	}
+	
+	public Animal(String nameInput, int ageInput) {
+		this.name = nameInput;
+		this.age = ageInput;
+	}
+	public void eat() {
+		System.out.println(name + " is eating");
+	}
+	public String toString() {
+		return "Animal{name='" + name + "', ages=" + age + "}";
+	}
+	
 }
